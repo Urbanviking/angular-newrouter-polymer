@@ -1,0 +1,25 @@
+<link rel="import" href="../../polymer-elements/polymer/polymer.html">
+<link rel="import" href="../../polymer-elements/core-ajax/core-ajax.html">
+
+<polymer-element name="user-service" attributes="users">
+  <template>
+    <style>
+    :host {
+      display: none;
+    }
+    </style>
+    <core-ajax id="ajax"
+      auto
+      url="../api/users.json"
+      on-core-response="{{users}}"
+      handleAs="json">
+    </core-ajax>
+  </template>
+  <script>
+  Polymer('user-service', {
+    users: function() {
+      this.users = this.$.ajax.response.slice(0);
+    }
+  });
+  </script>
+</polymer-element>

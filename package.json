@@ -1,0 +1,14 @@
+{
+  "name": "angular-newrouter",
+  "version": "1.0.0",
+  "description": "An example app to illustrate the usage of angular newrouter",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "http-server": "*",
+    "reload": "^0.1.0"
+  }
+}

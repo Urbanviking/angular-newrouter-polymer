@@ -1,0 +1,40 @@
+<link rel="import" href="../../polymer-elements/polymer/polymer.html">
+<link rel="import" href="../../polymer-elements/core-image/core-image.html">
+<link rel="import" href="../../services/user-service.html">
+<link rel="import" href="../user/user-card.html">
+
+<polymer-element name="users-card" attributes="show">
+  <template>
+    <style>
+    :host {
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+    </style>
+    <user-service users="{{users}}">
+    </user-service>
+    <div horizontal layout center>
+      <template repeat="{{user in users}}">
+        <paper-shadow z="3">
+          <user-card flex wrap>
+            <h4>{{user.name}}</h4>
+            <p>{{user.location}}</p>
+            <core-image src="{{user.picture}}" preload sizing="cover"></core-image>
+          </user-card>
+          <user-card flex three>
+            <h4>{{user.name}}</h4>
+            <p>{{user.location}}</p>
+            <core-image src="{{user.picture}}" preload sizing="cover"></core-image>
+          </user-card>
+          <user-card flex self-stretch>
+            <h4>{{user.name}}</h4>
+            <p>{{user.location}}</p>
+            <core-image src="{{user.picture}}" preload sizing="cover"></core-image>
+          </user-card>
+        </paper-shadow>
+      </template>
+    </div>
+  </template>
+  <script>Polymer({});</script>
+</polymer-element>

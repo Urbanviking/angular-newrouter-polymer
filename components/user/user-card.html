@@ -1,0 +1,39 @@
+<link rel="import" href="../../polymer-elements/polymer/polymer.html">
+<link rel="import" href="../../polymer-elements/core-icon-button/core-icon-button.html">
+
+<polymer-element name="user-card">
+  <template>
+    <style>
+    :host {
+      background-color: white;
+      display: block;
+      position: relative;
+      width: 100%;
+    }
+    polyfill-next-selector { content: '.card-header h4'; }
+    .card-header ::content h4 {
+      margin: 10px;
+    }
+    polyfill-next-selector { content: '.card-body core-image'; }
+    .card-body ::content core-image {
+      height: 300px;
+      width: 400px;
+    }
+    polyfill-next-selector { content: '.card-footer p'; }
+    .card-footer ::content p {
+      margin: 10px;
+    }
+    </style>
+    <div class="card-header" horizontal layout center>
+      <content select="h4"></content>
+    </div>
+    <div class="card-body" horizontal layout center>
+      <content select="core-image"></content>
+    </div>
+    <div class="card-footer" horizontal layout center>
+      <content select="p"></content>
+    </div>
+    <content></content>
+  </template>
+  <script>Polymer({});</script>
+</polymer-element>

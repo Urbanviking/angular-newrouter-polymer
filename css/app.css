@@ -1,0 +1,32 @@
+core-scroll-header-panel::shadow #headerBg {
+  background-image: url(../images/Central_Park_jogging.png);
+}
+core-scroll-header-panel::shadow #condensedHeaderBg {
+  background: #03a9f4;
+}
+core-header-panel {
+  background: white;
+}
+core-toolbar {
+  color: white;
+}
+paper-item a {
+  color: black;
+  text-decoration: none;
+}
+#drawer-core-toolbar {
+  background: #03a9f4;
+}
+#main-core-toolbar {
+  background-color: transparent;
+  height: 600px;
+}
+#menu {
+  margin: 0;
+  padding: 0;
+}
+#menu-item {
+  background: white;
+  height: 65px;
+  padding-top: 10px;
+}

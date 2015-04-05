@@ -1,0 +1,38 @@
+[
+  {
+    "uid": 1,
+    "name": "Jacob Beerman",
+    "location": "Oslo, Norway",
+    "picture": "../images/jacob_beermann_portfolio_thumbnail.jpg"
+  },
+  {
+    "uid": 2,
+    "name": "Louise Sand Thomsen",
+    "location": "Copenhagen, Denmark",
+    "picture": "../images/louise_sand_thomsen_thumbnail.jpg"
+  },
+  {
+    "uid": 3,
+    "name": "Nicki Lentz",
+    "location": "Aalborg, Denmark",
+    "picture": "../images/nicki_lentz_portfolio_thumbnail.jpg"
+  },
+  {
+    "uid": 4,
+    "name": "Rasmus Wisbech",
+    "location": "Phoenix, Arizona",
+    "picture": "../images/rasmus_wisbech_portfolio_thumbnail.jpg"
+  },
+  {
+    "uid": 5,
+    "name": "Erik Lau Kelner",
+    "location": "Copenhagen",
+    "picture": "../images/erik_lau_kelner_portfolio_thumbnail.jpg"
+  },
+  {
+    "uid": 6,
+    "name": "Yvonn Luxholm",
+    "location": "Copenhagen, Denmark",
+    "picture": "../images/yvonn_luxholm_portfolio_thumbnail.jpg"
+  }
+]
